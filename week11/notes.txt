@@ -1,0 +1,5 @@
+How does subtyping relate to types for OOP?
+
+What are the relative strengths of subtyping and generics?
+
+How can subtyping and generics combine synergistically?

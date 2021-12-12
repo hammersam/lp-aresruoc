@@ -1,0 +1,10 @@
+Signature matching
+
+structure Foo :> BAR is allowed if:
+* Every non-abstract type in BAR is provided in Foo, as specified
+* Every abstract type in BAR is provided in Foo in some way
+  - Can be a datatype or a type synonym
+* Every val-binding in BAR is provided in Foo, possibly with a
+more general and/or less abstract internal type
+  - Discussed "more general types" earlier in course
+* Every exception in BAR is provided in Foo

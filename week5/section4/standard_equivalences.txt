@@ -1,0 +1,16 @@
+Standard Equivalences
+* Syntactic sugar
+  - using or not using syntactic sugar is always equivalent
+  - By definition, else not syntactic sugar
+
+fun f x = x andalso g x
+fun f x = if x then g x else false
+
+if we ignore types, then ML let bindings can be
+syntactic sugar for calling an anonymous function:
+
+let val x = e1 in e2 end
+(fn x => e2) e1
+
+- These both evalute e1 to v1, then evalute e2 in an
+  environment extended to map x to v1

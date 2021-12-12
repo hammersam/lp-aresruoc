@@ -1,0 +1,17 @@
+Q1: What does a statically typed OOP language need to support "required overriding"?
+"abstract class/method" in Java/C# or "pure virutal method" in C++.
+
+Q2: How is this similar to higher-order functions?
+Subclass gives code to superclass.
+abstract class A {
+    abstract T1 m1(a1);
+}
+class B {
+    T1 m1(a1) { ... }
+}
+Caller passes code to callee.
+g (f, x) = f x
+h x = g ((fn x -> ...), x)
+
+Q3: Why does a language with multiple inheritance(e.g., C++) not need Java/C#-style interfaces?
+Java中的interface是用来弥补Java中一个类只能有一个父类的局限，而在C++中一个类可以有多个父类，不存在这种局限性，于是不需要interface。
